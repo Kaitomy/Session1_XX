@@ -18,10 +18,8 @@ namespace Amonic
         public Users()
         {
             this.Track = new HashSet<Track>();
-
         }
-
-
+    
         public int ID { get; set; }
         public int RoleID { get; set; }
         public string Email { get; set; }
@@ -29,7 +27,7 @@ namespace Amonic
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public Nullable<int> OfficeID { get; set; }
-        public DateTime Birthdate { get; set; }
+        public Nullable<System.DateTime> Birthdate { get; set; }
         public Nullable<bool> Active { get; set; }
     
         public virtual Offices Offices { get; set; }

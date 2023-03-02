@@ -11,7 +11,7 @@
         <Button x:Name="Exit" Content="Add user" HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top" Click="AddUser_Click" BorderThickness="0" />
         <Button x:Name="AddUser"  Content="Exit" HorizontalAlignment="Left" Margin="102,3,0,0" VerticalAlignment="Top" Click="Exit_Click" BorderThickness="0" />
         <Label Content="Office :" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name ="OfficeList" DisplayMemberPath="Title" HorizontalAlignment="Left" Margin="78,40,0,0" VerticalAlignment="Top" Width="190" SelectedIndex="0" />
+        <ComboBox x:Name ="OfficeList" DisplayMemberPath="Title" SelectedValuePath="ID" HorizontalAlignment="Left" Margin="78,40,0,0" VerticalAlignment="Top" Width="190" SelectionChanged="OfficeList_SelectionChanged"  />
         <DataGrid x:Name="AmonicDataUsers" AutoGenerateColumns="False" IsReadOnly="True" Margin="22,90,22,129" >
             <DataGrid.Columns  >
                 <DataGridTextColumn Header="Name" Binding="{Binding FirstName}"></DataGridTextColumn>

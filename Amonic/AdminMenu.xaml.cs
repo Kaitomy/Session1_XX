@@ -45,5 +45,18 @@ namespace Amonic
         {
 
         }
+
+        private void OfficeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (OfficeList.SelectedValue == null)
+            {
+                AmonicDataUsers.ItemsSource = Session1_XXEntities.GetContext().Users.ToList();
+            }
+            else {
+                int r = int.Parse(OfficeList.SelectedValue.ToString());
+               
+                AmonicDataUsers.ItemsSource = Session1_XXEntities.GetContext().Users.Where(a => a.OfficeID == r).ToList();
+            }
+        }
     }
 }

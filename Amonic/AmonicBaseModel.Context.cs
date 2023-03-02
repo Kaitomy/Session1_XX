@@ -15,6 +15,7 @@ namespace Amonic
     
     public partial class Session1_XXEntities : DbContext
     {
+
         private static Session1_XXEntities _context;
         public Session1_XXEntities()
             : base("name=Session1_XXEntities")
@@ -22,13 +23,13 @@ namespace Amonic
         }
         public static Session1_XXEntities GetContext()
         {
-            
-            if (_context == null) {
+
+            if (_context == null)
+            {
                 _context = new Session1_XXEntities();
             }
             return _context;
         }
-    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
@@ -37,7 +38,6 @@ namespace Amonic
         public virtual DbSet<Countries> Countries { get; set; }
         public virtual DbSet<Offices> Offices { get; set; }
         public virtual DbSet<Roles> Roles { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Track> Track { get; set; }
         public virtual DbSet<Users> Users { get; set; }
     }

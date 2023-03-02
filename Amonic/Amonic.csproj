@@ -67,10 +67,20 @@
     <Compile Include="AddUserWindow.xaml.cs">
       <DependentUpon>AddUserWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AmonicBaseModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmonicBaseModel.Context.tt</DependentUpon>
+    </Compile>
     <Compile Include="AmonicBaseModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AmonicBaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AmonicBaseModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmonicBaseModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Countries.cs">
       <DependentUpon>AmonicBaseModel.tt</DependentUpon>
@@ -82,9 +92,6 @@
       <DependentUpon>AmonicBaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Roles.cs">
-      <DependentUpon>AmonicBaseModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagrams.cs">
       <DependentUpon>AmonicBaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Track.cs">
@@ -107,16 +114,6 @@
     </Page>
     <Compile Include="AdminMenu.xaml.cs">
       <DependentUpon>AdminMenu.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AmonicBaseModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AmonicBaseModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AmonicBaseModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AmonicBaseModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -214,19 +211,19 @@
     <Resource Include="Images\white.png" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="AmonicBaseModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>AmonicBaseModel.Context.cs</LastGenOutput>
       <DependentUpon>AmonicBaseModel.edmx</DependentUpon>
+      <LastGenOutput>AmonicBaseModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="AmonicBaseModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>AmonicBaseModel.edmx</DependentUpon>
       <LastGenOutput>AmonicBaseModel.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
