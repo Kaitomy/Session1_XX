@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,21 +15,23 @@ using System.Windows.Shapes;
 namespace Amonic
 {
     /// <summary>
-    /// Логика взаимодействия для ErrorWindow.xaml
+    /// Логика взаимодействия для AdminMenu.xaml
     /// </summary>
-    public partial class ErrorWindow : Window
+    public partial class AdminMenu : Window
     {
-        public ErrorWindow()
+        public AdminMenu()
         {
             InitializeComponent();
-         
         }
 
-        private void Confirm_Click(object sender, RoutedEventArgs e)
+        private void AddUser_Click(object sender, RoutedEventArgs e)
         {
-            
-           Debug.Write(first.IsChecked);
-            Debug.Write(second.IsChecked);
+
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -10,12 +10,13 @@
       <Image Source="/Images/DS2017_TP09_color@4x.png" Margin="168,56,168,195" />
         <Label Content="Username:" HorizontalAlignment="Left" Margin="116,252,0,0" VerticalAlignment="Top"/>
         <Label Content="Password:" HorizontalAlignment="Left" Margin="116,296,0,0" VerticalAlignment="Top" />
-        <Button Content="Login" HorizontalAlignment="Left" Margin="207,368,0,0" VerticalAlignment="Top" Height="38" Width="193" Click="Auth_Click"/>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="439,368,0,0" VerticalAlignment="Top" Height="38" Width="193" Click="Exit_Click"/>
+        <Grid x:Name="form">
+            <Button Content="Login" HorizontalAlignment="Left" Margin="207,368,0,0" VerticalAlignment="Top" Height="38" Width="193" Click="Auth_Click"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="439,368,0,0" VerticalAlignment="Top" Height="38" Width="193" Click="Exit_Click" />
         <TextBox HorizontalAlignment="Left" Margin="264,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="368"/>
-        <TextBox HorizontalAlignment="Left" Margin="264,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="368"/>
-
-
+            <TextBox HorizontalAlignment="Left" Margin="264,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="368"/>
+        </Grid>
+        <Label x:Name="tick"  Content="10" HorizontalAlignment="Left" Margin="740,10,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
 
     </Grid>
 </Window>
