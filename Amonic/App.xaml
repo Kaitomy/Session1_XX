@@ -1,0 +1,21 @@
+﻿<Application x:Class="Amonic.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Amonic"
+             StartupUri="AuthWindow.xaml">
+    <Application.Resources>
+        <FontFamily x:Key="TeXGyreAdventor">Fonts/#TeX Gyre Adventor</FontFamily>
+        <Style TargetType="{x:Type local:AuthWindow}">
+            <Setter Property="FontFamily" Value="{StaticResource TeXGyreAdventor}"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+        </Style>
+        <Style TargetType="{x:Type local:ErrorWindow}">
+            <Setter Property="FontFamily" Value="{StaticResource TeXGyreAdventor}"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="White"></Setter>
+        </Style>
+        
+    </Application.Resources>
+</Application>
