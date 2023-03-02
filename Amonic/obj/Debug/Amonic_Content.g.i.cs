@@ -8,29 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_2_colors@4x.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_2_colors.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_2_colors_@2x.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_2_colors_swatches@4x1.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_2_colors_with_bg@2x.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_2_colors_with_bg@4x.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_2_colors_with_bg.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_airplane-amonic-single.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_airplane-amonic.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_black@2x.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_black@4x.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_black.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_color@2x.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_color@4x.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_color.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_color_swatches@4x1.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_color_swatches.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_mono@2x.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_mono@4x.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_mono.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ds2017_tp09_mono_swatches@4x1.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/white@2x.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/white@4x.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/white.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("amonicbasemodel.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("amonicbasemodel.tt")]
 
 

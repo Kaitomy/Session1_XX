@@ -22,6 +22,18 @@
         <Style TargetType="Button">
             <Setter Property="Background" Value="White"></Setter>
         </Style>
-        
+
+        <Style TargetType="DataGridRow">
+
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Roles.Title}" Value="Administrator">
+                    <Setter Property="Background" Value="LightGreen"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Active}" Value="False">
+                    <Setter Property="Background" Value="red"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
     </Application.Resources>
 </Application>

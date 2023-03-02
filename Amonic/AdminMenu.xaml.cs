@@ -22,14 +22,26 @@ namespace Amonic
         public AdminMenu()
         {
             InitializeComponent();
+            
+            OfficeList.ItemsSource = Session1_XXEntities.GetContext().Offices.ToList();
+        
+            AmonicDataUsers.ItemsSource = Session1_XXEntities.GetContext().Users.ToList();
+            
         }
 
         private void AddUser_Click(object sender, RoutedEventArgs e)
         {
-
+            Window add = new AddUserWindow();
+            add.Show();
+            this.Close();
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AmonicDataUsers_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
         {
 
         }
