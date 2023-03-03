@@ -15,7 +15,6 @@ namespace Amonic
     
     public partial class Session1_XXEntities : DbContext
     {
-
         private static Session1_XXEntities _context;
         public Session1_XXEntities()
             : base("name=Session1_XXEntities")
