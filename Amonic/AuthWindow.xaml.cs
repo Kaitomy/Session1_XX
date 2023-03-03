@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -30,23 +31,25 @@ namespace Amonic
             InitializeComponent();
         }
 
-
-        bool tryLogin()
-        {
-            return false;
-        }
-       
+       // Environment.Exit(0)
+        
 
         private async void Auth_Click(object sender, RoutedEventArgs e)
         {
-             var n = tryLogin();
-            if (n == false)
+            string user = null;
+            string hash = BitConverter.ToString(MD5.Create().ComputeHash(Encoding.UTF8.GetBytes(Password.Text))).Replace("-", "");
+            try
+            {
+                user = Session1_XXEntities.GetContext().Users.Where(a => a.Email == Email.Text && a.Password == hash).Single().ID.ToString();
+            }
+            catch { user = null; }
+            if (user == null || user.Contains("null"))
             {
                 i++;
-                if(i == 3)
+                if (i == 3)
                 {
-                   
-                    form.IsEnabled= false;
+
+                    form.IsEnabled = false;
                     tick.Visibility = Visibility.Visible;
 
                     for (int r = 10; r >= 0; r--)
@@ -60,8 +63,26 @@ namespace Amonic
                     tick.Visibility = Visibility.Hidden;
                 }
             }
-            else {
+            else
+            {
                 i = 0;
+                int r = int.Parse(user);
+                int role = Session1_XXEntities.GetContext().Users.Where(a => a.ID == r).SingleOrDefault().RoleID;
+                if (role == 1)
+                {
+
+                    Window error = new AddUserWindow();
+                    error.Show();
+                    this.Close();
+                }
+                if (role == 2)
+                {
+
+                    Window error = new AdminMenu();
+                    error.Show();
+                    this.Close();
+                }
+                
             }
 
         }

@@ -38,7 +38,9 @@ namespace Amonic
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
-
+            Window add = new AuthWindow();
+            add.Show();
+            this.Close();
         }
 
         private void AmonicDataUsers_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)

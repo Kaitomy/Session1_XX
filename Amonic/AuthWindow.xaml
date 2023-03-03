@@ -13,8 +13,8 @@
         <Grid x:Name="form">
             <Button Content="Login" HorizontalAlignment="Left" Margin="207,368,0,0" VerticalAlignment="Top" Height="38" Width="193" Click="Auth_Click"/>
         <Button Content="Exit" HorizontalAlignment="Left" Margin="439,368,0,0" VerticalAlignment="Top" Height="38" Width="193" Click="Exit_Click" />
-        <TextBox HorizontalAlignment="Left" Margin="264,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="368"/>
-            <TextBox HorizontalAlignment="Left" Margin="264,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="368"/>
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="264,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="368"/>
+            <TextBox x:Name="Password" HorizontalAlignment="Left" Margin="264,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="368"/>
         </Grid>
         <Label x:Name="tick"  Content="10" HorizontalAlignment="Left" Margin="740,10,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
 
