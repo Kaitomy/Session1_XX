@@ -22,6 +22,16 @@
             <Setter Property="FontFamily" Value="{StaticResource TeXGyreAdventor}"></Setter>
             <Setter Property="FontSize" Value="15"></Setter>
         </Style>
+
+        <Style TargetType="{x:Type local:EditUserWindow}">
+            <Setter Property="FontFamily" Value="{StaticResource TeXGyreAdventor}"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+        </Style>
+        <Style TargetType="{x:Type local:UserMenu}">
+            <Setter Property="FontFamily" Value="{StaticResource TeXGyreAdventor}"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+        </Style>
+
         <Style TargetType="Button">
             <Setter Property="Background" Value="White"></Setter>
         </Style>

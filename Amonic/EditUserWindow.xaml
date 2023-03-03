@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Amonic"
         mc:Ignorable="d"
-        Title="EditUserWindow" Height="450" Width="800">
+        Title="EditUserWindow" Height="500" Width="500" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+
+        <Label  Content="Email address:" HorizontalAlignment="Left" Margin="100,103,0,0" VerticalAlignment="Top"/>
+        <Label  Content="First Name:" HorizontalAlignment="Left" Margin="100,140,0,0" VerticalAlignment="Top"/>
+        <Label  Content="Last Name:" HorizontalAlignment="Left" Margin="100,177,0,0" VerticalAlignment="Top"/>
+        <Label  Content="Office:" HorizontalAlignment="Left" Margin="100,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.522,0.536"/>
+        <Grid x:Name="grid" IsEnabled="False">
+            <TextBox x:Name="Email"  HorizontalAlignment="Left" Margin="238,111,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="214" />
+            <TextBox x:Name="FirstName" HorizontalAlignment="Left" Margin="238,148,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="214" />
+            <TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="238,181,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="214" />
+            <ComboBox SelectedIndex="0" x:Name="OfficeList" DisplayMemberPath="Title" SelectedValuePath="ID"  HorizontalAlignment="Left" Margin="238,214,0,0" VerticalAlignment="Top" Width="214"/>
+
+        </Grid>
+       
+        <Button x:Name="ApplyUser" Content="Apply" HorizontalAlignment="Left" Margin="128,372,0,0" VerticalAlignment="Top" Height="37" Width="122" Click="SaveUser_Click"/>
+        <Button x:Name="CancelAdd" Content="Cancel" HorizontalAlignment="Left" Margin="313,372,0,0" VerticalAlignment="Top" Height="37" Width="122" Click="CancelAdd_Click"/>
+        <RadioButton x:Name="users"  Content="User" HorizontalAlignment="Left" Margin="193,266,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="admins" Content="Administrator" HorizontalAlignment="Center" Margin="0,307,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

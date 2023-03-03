@@ -67,15 +67,15 @@ namespace Amonic
             {
                 i = 0;
                 int r = int.Parse(user);
-                int role = Session1_XXEntities.GetContext().Users.Where(a => a.ID == r).SingleOrDefault().RoleID;
-                if (role == 1)
+                int role = Session1_XXEntities.GetContext().Users.Where(a => a.ID == r).First().RoleID;
+                if (role == 2)
                 {
 
-                    Window error = new AddUserWindow();
+                    Window error = new UserMenu(r);
                     error.Show();
                     this.Close();
                 }
-                if (role == 2)
+                if (role == 1)
                 {
 
                     Window error = new AdminMenu();
